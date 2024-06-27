@@ -1,0 +1,11 @@
+$bounce: cubic-bezier(0.68, -0.55, 0.27, 1.55) ;
+
+.app {
+  width: 100%;
+  min-height: 100dvh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url('/app-bg.png');
+  background-size: cover;
+}

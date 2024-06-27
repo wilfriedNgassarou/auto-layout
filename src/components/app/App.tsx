@@ -1,5 +1,9 @@
+import Layout from "../layout/Layout";
+
 export default function App() {
   return (
-    <div></div>
+    <section className="app">
+      <Layout />
+    </section>
   )
 }

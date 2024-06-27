@@ -3,8 +3,32 @@ import Logo from "../logo/Logo";
 
 export default function Layout() {
   const [size, setSize] = useState<'small' | 'medium' | 'big'>('medium')
+  const [direction, setDirection] = useState<'backward' | 'forward'>('forward')
 
   function handleChangeSize() {
+    if(direction == 'backward') {
+      switch (size) {
+        case 'small':
+          setDirection('forward')
+          setSize('medium')
+          break;
+
+        case 'medium':
+          setSize('small')
+          break;
+
+        case 'big':
+          setSize('medium')
+          break;
+      
+        default:
+          setSize('medium')
+          break;
+      }
+
+      return ;
+    }
+
     switch (size) {
       case 'small':
         setSize('medium')
@@ -15,7 +39,8 @@ export default function Layout() {
         break;
 
       case 'big':
-        setSize('small')
+        setDirection('backward')
+        setSize('medium')
         break;
     
       default:

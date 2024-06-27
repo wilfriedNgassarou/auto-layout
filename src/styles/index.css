@@ -7,6 +7,25 @@
   align-items: center;
   background-image: url("/app-bg.png");
   background-size: cover;
+  position: relative;
+}
+
+.credits {
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 20px;
+  display: flex;
+  justify-content: space-between;
+}
+.credits span {
+  display: inline-block;
+  background-color: white;
+  padding: 20px 20px;
+  color: black;
+}
+.credits a {
+  color: black;
 }
 
 * {

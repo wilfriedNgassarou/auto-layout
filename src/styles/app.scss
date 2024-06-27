@@ -8,4 +8,25 @@ $bounce: cubic-bezier(0.68, -0.55, 0.27, 1.55) ;
   align-items: center;
   background-image: url('/app-bg.png');
   background-size: cover;
+  position: relative;
+}
+
+.credits {
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 20px;
+  display: flex;
+  justify-content: space-between;
+  
+  span {
+    display: inline-block;
+    background-color: white;
+    padding: 20px 20px;
+    color: black;  
+  }
+
+  a {
+    color: black;
+  }
 }
